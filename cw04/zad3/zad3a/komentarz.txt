@@ -1,0 +1,2 @@
+Sygnały SIGUSR1 docierały w mniejszości w obu wariantach (sigqueue i kill).
+Sygnały czasu rzeczywistego docierały wszystkie zarówno do catchera jak i z powrotem do sendera.

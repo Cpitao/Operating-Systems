@@ -1,0 +1,2 @@
+Wywołując "make test" można podać argument RESULTS, w którym znajdzie się nazwa pliku do którego
+mają zostać zapisane wyniki (domyślnie jest to "raport2.txt").

@@ -1,0 +1,145 @@
+Testy przeprowadzono dla obrazka o rozmiarach 600x600.
+Obrazek zamieszczono w folderze (apollonian...) wraz z otrzymanym negatywem
+(apollo.pgm).
+Mozna zaobserwowac, ze dla wiekszej liczby watkow tryb 'blocks' jest
+szybszy od 'numbers'. Wynika to z faktu, ze w trybie blocks kazdy
+watek rozpatruje tylko pozycje ktore ma przydzielone. W trybie
+numbers kazdy watek sprawdza caly obrazek piksel po pikselu, i modyfikuje
+tylko gdy spelniony zostanie zadany warunek.
+Niektore zmierzone czasy byly na tyle male, ze duzy wplyw na uzyskane wyniki
+mogly miec procesy dzialajace w tle. Z tego powodu niektore wyniki moga byc
+znieksztalcone.
+
+Mode: numbers
+Threads: 1
+Total time: 0s14991us
+Thread #0: 0s11342us
+
+
+Mode: blocks
+Threads: 1
+Total time: 0s5353us
+Thread #0: 0s1958us
+
+
+Mode: numbers
+Threads: 2
+Total time: 0s5291us
+Thread #0: 0s1641us
+Thread #1: 0s3147us
+
+
+Mode: blocks
+Threads: 2
+Total time: 0s10545us
+Thread #0: 0s601us
+Thread #1: 0s4032us
+
+
+Mode: numbers
+Threads: 4
+Total time: 0s8774us
+Thread #0: 0s4838us
+Thread #1: 0s4047us
+Thread #2: 0s1372us
+Thread #3: 0s6252us
+
+
+Mode: blocks
+Threads: 4
+Total time: 0s16749us
+Thread #0: 0s1344us
+Thread #1: 0s1530us
+Thread #2: 0s276us
+Thread #3: 0s276us
+
+
+Mode: numbers
+Threads: 8
+Total time: 0s25081us
+Thread #0: 0s11604us
+Thread #1: 0s5443us
+Thread #2: 0s12216us
+Thread #3: 0s17874us
+Thread #4: 0s8856us
+Thread #5: 0s9171us
+Thread #6: 0s11861us
+Thread #7: 0s9125us
+
+
+Mode: blocks
+Threads: 8
+Total time: 0s13133us
+Thread #0: 0s344us
+Thread #1: 0s662us
+Thread #2: 0s166us
+Thread #3: 0s277us
+Thread #4: 0s292us
+Thread #5: 0s864us
+Thread #6: 0s469us
+Thread #7: 0s166us
+
+
+Mode: numbers
+Threads: 16
+Total time: 0s22755us
+Thread #0: 0s2366us
+Thread #1: 0s3531us
+Thread #2: 0s1573us
+Thread #3: 0s3593us
+Thread #4: 0s5307us
+Thread #5: 0s1468us
+Thread #6: 0s869us
+Thread #7: 0s3818us
+Thread #8: 0s2443us
+Thread #9: 0s2609us
+Thread #10: 0s1675us
+Thread #11: 0s6196us
+Thread #12: 0s4156us
+Thread #13: 0s1046us
+Thread #14: 0s937us
+Thread #15: 0s8615us
+
+
+Mode: blocks
+Threads: 16
+Total time: 0s8831us
+Thread #0: 0s70us
+Thread #1: 0s70us
+Thread #2: 0s71us
+Thread #3: 0s78us
+Thread #4: 0s70us
+Thread #5: 0s70us
+Thread #6: 0s70us
+Thread #7: 0s70us
+Thread #8: 0s70us
+Thread #9: 0s69us
+Thread #10: 0s69us
+Thread #11: 0s70us
+Thread #12: 0s70us
+Thread #13: 0s69us
+Thread #14: 0s266us
+Thread #15: 0s176us
+
+
+Mode: blocks
+Threads: 16
+Total time: 0s14995us
+Thread #0: 0s75us
+Thread #1: 0s1428us
+Thread #2: 0s143us
+Thread #3: 0s127us
+Thread #4: 0s81us
+Thread #5: 0s72us
+Thread #6: 0s131us
+Thread #7: 0s1112us
+Thread #8: 0s116us
+Thread #9: 0s69us
+Thread #10: 0s113us
+Thread #11: 0s111us
+Thread #12: 0s146us
+Thread #13: 0s88us
+Thread #14: 0s161us
+Thread #15: 0s96us
+
+

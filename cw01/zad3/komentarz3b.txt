@@ -1,0 +1,8 @@
+W pliku raport3b.txt zapisane zostały zmierzone czasy dla podstawowych operacji dla optymalizacji przy pomocy
+flag -O, -O0, -O1, -O2, -O3, -Os. Aby różnicę można było zaobserwować, czasy zmierzono jedynie dla plików o większych
+rozmiarach (10000.txt i większe) (plik n.txt, gdzie n to pewna liczba ma postać ciągu n linii, gdzie w i-tej z nich
+znajduje się i znaków). Ponownie różnice pomiędzy wykorzystaniem biblioteki statycznej, dynamicznej i współdzielonej
+były niezauważalne. Znaczną różnicę można było z kolei zaobserwować w zmierzonym czasie użytkownika i rzeczywistym
+pomiędzy jakąkolwiek optymalizacją a jej brakiem (w przypadku flagi -O0). Różnica tu sięgała nawet 50%.
+Na koniec warto zauważyć, że czas użytkownika i czas systemowy stanowią jedynie ułamek wartości rzeczywistego czasu
+wykonania programu.

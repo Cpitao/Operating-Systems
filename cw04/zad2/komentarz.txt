@@ -1,0 +1,15 @@
+3 przetestowane flagi to SA_SIGINFO, SA_NODEFER, SA_RESETHAND.
+Flaga SA_SIGINFO pozwoliła na uzyskanie dodatkowych informacji dotyczących sygnału. Są to między innymi:
+- numer sygnału
+- wartość errno
+- PID procesu wysyłającego sygnał
+- UID właściciela wysyłającego procesu
+- Adres z którego wysłano sygnał
+
+Flaga SA_NODEFER powoduje, że obsługiwany sygnał nie jest maskowany. Przetestowano to poprzez wysłanie sygnału z procesu
+potomnego do procesu macierzystego 5 sygnałów (co 1 sekundę), oraz ustawieniu w handlerze czekania (sleep(5)) 5 sekund.
+Zgodnie z oczekiwaniami, wszystkie 5 sygnałów zostało dostarczonych. Bez tej flagi tylko pierwszy został dostarczony i obsłużony.
+
+Flaga SA_RESETHAND powoduje, że handler zadziała tylko po otrzymaniu pierwszego sygnału. Potem ponownie wykonuje się domyślna akcja
+dla zadanego sygnału. Aby przetestować działanie wysłano 2 sygnały do procesu. Pierwszy został poprawnie obsłużony, kolejny spowodował
+zakończenie procesu.

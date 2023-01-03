@@ -1,0 +1,6 @@
+Z danych zawartych w pliku raport3a.txt widać, że zarówno zwolnienie miejsca pod podanym indeksem,
+jak i zapisanie wyników do tablicy zajmują poniżej 0.00001 sekundy. Różnice w czasie wykonania pomiędzy
+wykorzystaniem bibliotek statycznych, dzielonych i dynamicznie ładowanych nie
+przekraczają 1*10^-5 sekundy w przypadku czasu użytkownika i 0.01 sekundy w przypadku czasu rzeczywistego.
+W przypadku tak małych różnic czasowych nie można stwierdzić na tej podstawie czy któraś z metod prowadzi
+do szybszego czasu wykonania programu.

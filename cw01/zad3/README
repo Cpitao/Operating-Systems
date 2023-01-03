@@ -1,0 +1,5 @@
+Testy, które dopiszą nową zawartość do plików odpowiednio raport3a.txt i raport3b.txt możemy wywołać komendami odpowiednio:
+make test_a
+make test_b
+
+Kompilację na 3 zadane sposoby można wykonać wywołując make.

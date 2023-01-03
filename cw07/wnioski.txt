@@ -1,0 +1,15 @@
+Programy przetestowano dla liczby kucharzy i dostawcow rownych odpowiednio:
+- 4 i 4
+- 10 i 10
+
+Dla wartosci mniejszych od 5 mozna bylo zaobserwowac poprawne dzialanie, 
+w ktorym liczba pizz w piecu/na stole wahala sie w zaleznosci od momentu.
+
+Dla 10 dostawcow/kucharzy natomiast liczba pizz w piecu za kazdym razem
+wynosila 5. Ponownie mozna sie tego spodziewac - kiedy 5 kucharzy czeka az
+w piecu zwolni sie miejsce, wiec jest on wypelniany zaraz po zwolnieniu sie
+miejsca.
+
+Przy wykorzystaniu standardu POSIX kluczowe bylo wykonywanie operacji na
+semaforach w odpowiedniej kolejnosci tak, aby nie doszlo do zakleszczenia.
+Ostatecznie udalo sie to zrealizowac.

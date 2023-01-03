@@ -1,0 +1,1 @@
+Wersja w której czekamy na potwierdzenie otrzymania sygnału nie gubi żadnych sygnałów.

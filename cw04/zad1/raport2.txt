@@ -1,0 +1,10 @@
+Po wywołaniu programu dla każdej z opcji okazało się, że:
+> w przypadku użycia forka:
+  - dla opcji ignore: sygnał jest ignorowany również w procesie potomnym, skąd wniosek że dziedziczona jest obsługa sygnałów
+  - dla opcji handler: sygnał jest poprawnie obsługiwany w procesie potomnym
+  - dla opcji mask: sygnał jest maskowany w procesie potomnym (dziedziczone są ustawienia maski)
+  - dla opcji pending: sygnał oczekuje w każdym z procesów
+> w przypadku użycia execl:
+  - dla opcji ignore: sygnał jest ignorowany
+  - dla opcji handler: sygnał jest domyślnie obsługiwane (nie jest dziedziczony handler)
+  - dla opcji pending: sygnał JEST oczekujący 

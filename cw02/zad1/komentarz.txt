@@ -1,0 +1,2 @@
+Czasy przy wykorzystaniu funkcji systemowych są kilkanaście, a nawet kilkadziesiąt razy większe niż
+czasy zmierzone dla wykorzystania funkcji bibliotecznych.

@@ -1,0 +1,2 @@
+Widzimy że czasy przy wykorzystaniu funkcji systemowych są kilkanaście razy wyższe niż te przy wykorzystaniu
+funkcji bibliotecznych.
